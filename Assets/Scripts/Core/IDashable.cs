@@ -1,9 +1,8 @@
-namespace GameForge.Core
+namespace Game.Core
 {
     public interface IDashable
     {
-        bool IsDashing { get; }
-        bool CanDash { get; }
         void Dash();
+        bool CanDash { me; }
     }
 }
