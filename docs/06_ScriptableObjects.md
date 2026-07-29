@@ -1,7 +1,7 @@
 # ScriptableObjects
 
 ## Data Assets
-- [ ] PlayerData — 플레이어 기본 체력(3칸) 등 기본 스탯 정보 보유 (PlayerController 참조)
-- [ ] DashData — 대시 무적 시간(0.3초), 쿨다운 시간(1.2초) 등 대시 관련 수치 보유 (DashComponent 참조)
-- [ ] ItemData — 아이템 이름, 아이콘, 설명 및 세부 효과 수치(IItemEffect 목록) 보유 (BuildManager 및 PlayerController 참조)
-- [ ] FeedbackData — 피격 시 화면 흔들림 시간/강도, 넉백 수치 등 연출 수치 보유 (FeedbackManager 참조)
+- [ ] PlayerData — 플레이어 기본 스탯(최대 체력, 이동 속도, 대시 쿨다운, 대시 무적 시간 등)을 정의하며 PlayerController 및 DashComponent에서 참조하는 데이터 에셋
+- [ ] EnemyData — 몬스터 공통 스탯(최대 체력, 이동 속도, 공격력, 처치 시 지급 골드량 등)을 정의하며 BaseEnemy, MeleeEnemy, RangedEnemy에서 참조하는 데이터 에셋
+- [ ] ItemData — 아이템 기본 정보(아이템 이름, 설명, 가격, 아이콘 프리팹) 및 적용할 IItemEffect(StatBoostEffect 등) 목록을 관리하며 InventoryComponent 및 상점 시스템에서 참조하는 데이터 에셋
+- [ ] ProjectileData — 투사체의 속도, 데미지, 사거리, 관통 여부 및 그래픽 프리팹 정보를 정의하며 Projectile 및 RangedEnemy에서 참조하는 데이터 에셋
