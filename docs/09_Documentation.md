@@ -1,0 +1,22 @@
+# Documentation
+
+## Requirements Summary
+- [ ] 장르: PC 플랫폼 기반 2D 로그라이크 액션 게임 (키보드 및 마우스 조작)
+- [ ] WASD 8방향 이동 및 마우스 방향 대시 기능
+- [ ] 마우스 좌클릭 근접 검 공격 및 우클릭 원거리 투척 무기 공격
+- [ ] 메인 메뉴, 인게임 HUD(체력 및 골드), 게임오버 화면 제공
+- [ ] 싱글플레이 전용 (멀티플레이 기능 Scope 제외)
+
+## Game Design Summary
+- [ ] 저주받은 성을 배경으로 한 판타지 세계관 및 탐험 스토리
+- [ ] 던전을 순차적으로 클리어하며 진행하는 구조 및 스테이지 클리어 시 능력치 강화 아이템 선택 빌드업 시스템
+- [ ] 캐릭터 구성: 이름 없는 검객(주인공), 근접형 몬스터, 원거리형 몬스터
+- [ ] UI 구성: 메인 메뉴, 인게임 HUD, 스테이지 클리어 아이템 선택 화면, 게임오버 화면
+
+## System Design Summary
+- [ ] 대시 동작 쿨다운 1.2초, 대시 시작 후 0.3초간 무적 판정 적용
+- [ ] 근접 공격 히트박스 생성, 원거리 투사체 오브젝트 발사 및 피격 시 체력 감소/넉백 적용 메커니즘
+- [ ] 몬스터 처치 시 골드 획득 및 골드 차감을 통한 아이템 구매/능력치 강화 적용 데이터 흐름
+- [ ] PlayerController, DashComponent, HealthComponent, BaseEnemy(Melee/Ranged), InventoryComponent, ItemData/StatBoostEffect 등 핵심 클래스 구조 설계
+- [ ] Game.Core, Game.Item, Game.Player, Game.Enemy, Game.UI 등의 모듈화된 폴더 및 Assembly Definition 구조 구성
+- [ ] PlayerData, EnemyData, ItemData, ProjectileData 스크립터블 오브젝트(ScriptableObject)를 통한 데이터 관리
