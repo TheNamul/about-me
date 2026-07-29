@@ -51,7 +51,7 @@ namespace Game.Player
 
         public void Dash()
         {
-            if (dashComponent.TryDash())
+            if (dashComponent != null && dashComponent.TryDash())
             {
                 float speedMult = playerData != null ? playerData.dashSpeedMultiplier : 2.5f;
                 rb.velocity = moveInput * (playerData != null ? playerData.moveSpeed : 5f) * speedMult;
